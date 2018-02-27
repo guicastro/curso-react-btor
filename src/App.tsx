@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import './Profile.css';
+import './profile.css';
 import Profile from './Profile';
 
 class App extends React.Component {
@@ -11,26 +11,26 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <div className="ProfileBody">
+        <div className="profile-body">
           <div className="ProfileTop"><img src={this.Profile.Top} /></div>
-          <div className="ProfileLeft">
-            <img src={this.Profile.Picture} className="ProfilePicture" />
-            <p className="ProfileDataTitle">{this.Profile.Friends}</p>
-            <p className="ProfileDataText">Friends</p>
-            <p className="ProfileDataTitle">{this.Profile.Photos}</p>
-            <p className="ProfileDataText">Photos</p>
+          <div className="profile-left">
+            <img src={this.Profile.Picture} className="profile-picture" />
+            <p className="profile-data-title">{this.Profile.Friends}</p>
+            <p className="profile-data-text">Friends</p>
+            <p className="profile-data-title">{this.Profile.Photos}</p>
+            <p className="profile-data-text">Photos</p>
           </div>
-          <div className="ProfileRight">
+          <div className="profile-right">
             <h1>{this.Profile.FirstName} <strong>{this.Profile.LastName}</strong></h1>
             <h2>{this.Profile.Title}</h2>
-            <p className="ProfileDataText black"><i className="fa fa-phone" /> {this.Profile.Phone}</p>
-            <p className="ProfileDataText black">
+            <p className="profile-data-text black"><i className="fa fa-phone" /> {this.Profile.Phone}</p>
+            <p className="profile-data-text black">
               <i className="fa fa-envelope" /> <a href="mailto:{this.Profile.Email}">{this.Profile.Email}</a>
             </p>
-            <p className="ProfileDataText black"><i className="fa fa-instagram" /> {this.Profile.Instagram}</p>
-            <p className="ProfileDataText black"><i className="fa fa-calendar" /> {this.Profile.Age} anos</p>
+            <p className="profile-data-text black"><i className="fa fa-instagram" /> {this.Profile.Instagram}</p>
+            <p className="profile-data-text black"><i className="fa fa-calendar" /> {this.Profile.Age} anos</p>
           </div>
-          <div className="ProfileBio">{this.Profile.Bio}</div>
+          <div className="profile-bio">{this.Profile.Bio}</div>
         </div>
       </div>
     );

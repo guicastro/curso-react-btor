@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
-.ProfileBody {
+.profile-body {
 
     position: absolute;
     left:50%;
@@ -13,7 +13,7 @@
     border: 1px solid #e2e2e2;
 }
 
-.ProfileLeft {
+.profile-left {
 
     position: relative;
     left: 10px;
@@ -23,7 +23,7 @@
     float: left;
 }
 
-.ProfilePicture {
+.profile-picture {
 
     position: absolute;
     left: 0;
@@ -32,7 +32,7 @@
     background-color: #FFF;
 }
 
-.ProfileRight {
+.profile-right {
 
     position: relative;
     width: 185px;
@@ -41,28 +41,28 @@
     float: left;
 }
 
-.ProfileBio {
+.profile-bio {
 
     padding: 5px;
     text-align: center;
     clear: both;
 }
 
-.ProfileDataTitle {
+.profile-data-title {
 
     margin: 8px 0 0 0;
     font-size: 14px;
     font-weight: 700;
 }
 
-.ProfileDataText {
+.profile-data-text {
 
     margin: 0;
     font-weight: 300;
     color:#999;
 }
 
-.ProfileRight > h1 {
+.profile-right > h1 {
 
     margin: 0;
     font-size: 18px;
@@ -71,7 +71,7 @@
 }
 
 
-.ProfileRight > h2 {
+.profile-right > h2 {
 
     margin: 0;
     font-size: 14px;
@@ -79,19 +79,19 @@
     color: #999;
 }
 
-.ProfileRight > p {
+.profile-right > p {
 
     margin: 6px 0;
     line-height: 160%;
 }
 
-.ProfileBody a {
+.profile-body a {
 
     text-decoration: none;
 }
 
 
-.ProfileBody a:hover {
+.profile-body a:hover {
 
     color: cornflowerblue;
 }
