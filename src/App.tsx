@@ -1,7 +1,7 @@
-import * as React from "react";
-import "./App.css";
-import "./profile.css";
-import Profile from "./Profile";
+import * as React from 'react';
+import './App.css';
+import './profile.css';
+import Profile from './Profile';
 
 class App extends React.Component {
   profile = new Profile();

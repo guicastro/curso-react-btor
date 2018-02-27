@@ -1,5 +1,6 @@
 {
     "extends": ["tslint-react"],
+    "defaultSevetiry": "warning",
     "defaults": {
         "severity": "warning"
     },
