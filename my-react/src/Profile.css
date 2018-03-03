@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+.profile-body {
+
+    position: absolute;
+    left:50%;
+    margin-left:-150px;
+    width:300px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    border: 1px solid #e2e2e2;
+}
+
+.profile-left {
+
+    position: relative;
+    left: 10px;
+    width: 85px;
+    padding-top:55px;
+    text-align: left;
+    float: left;
+}
+
+.profile-picture {
+
+    position: absolute;
+    left: 0;
+    top: -30px;
+    padding: 5px;
+    background-color: #FFF;
+}
+
+.profile-right {
+
+    position: relative;
+    width: 185px;
+    margin-left: 20px;
+    text-align: left;
+    float: left;
+}
+
+.profile-bio {
+
+    padding: 5px;
+    text-align: center;
+    clear: both;
+}
+
+.profile-data-title {
+
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.profile-data-text {
+
+    margin: 0;
+    font-weight: 300;
+    color:#999;
+}
+
+.profile-right > h1 {
+
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+}
+
+
+.profile-right > h2 {
+
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+}
+
+.profile-right > p {
+
+    margin: 6px 0;
+    line-height: 160%;
+}
+
+.profile-body a {
+
+    text-decoration: none;
+}
+
+
+.profile-body a:hover {
+
+    color: cornflowerblue;
+}
+
+.black {
+
+    color: #000;
+}
