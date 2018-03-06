@@ -26,3 +26,9 @@ No caso de true ele irá verificar seu código e retornar erros quando você esc
 ##PARA AULA 26/02
 - Escrever um HTML de PROFILE
 - 300px
+
+# Melhorias
+Correção de warnings
+Sugestão de propriedades e erro em mailto
+Sugestão de nomenclatura para classes e atributos (https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines#names)
+Sugestão de nomenclatura para css 
