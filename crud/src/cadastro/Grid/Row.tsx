@@ -5,14 +5,14 @@ import Pessoa from "../../model/Pessoa";
 interface Props {
 
     data: Pessoa;
-    onEdit: (pessoa: Pessoa) => void;
+    /*onEdit: (pessoa: Pessoa) => void;*/
 }
 
 /*por ser um function, o método de chamar do handle será chamado como array function*/
 
 function Row(props: Props) {
 
-    const { data, onEdit } = props;
+    const { data /*,onEdit*/ } = props;
 
     return (
         <tr>
@@ -26,7 +26,7 @@ function Row(props: Props) {
                     type="button"
                     classname="btn btn-info btn-margin"
                     label="[E]"
-                    click={() => onEdit(data)} />
+                    /*click={() => onEdit(data)}*/ />
                 <Button
                     name="excluir"
                     id="excluir"

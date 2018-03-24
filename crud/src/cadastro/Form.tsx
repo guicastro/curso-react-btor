@@ -10,6 +10,7 @@ interface Props {
 
 interface State {
 
+  id: number,
   nome: string,
   email: string,
   idade: number
@@ -18,6 +19,7 @@ interface State {
 class Form extends React.Component<Props, State> {
 
   state = {
+    id: 0,
     nome: '',
     email: '',
     idade: 0,
@@ -25,9 +27,10 @@ class Form extends React.Component<Props, State> {
 
   handleSave = () => {
 
-    const {nome, email, idade} = this.state;
-    const data = {nome, email, idade};
+    const {id, nome, email, idade} = this.state;
+    const data = {id, nome, email, idade};
     this.props.onAdd(data);
+    this.setState({id: 0, nome: '', email:'', idade:0});
   }
 
   render() {

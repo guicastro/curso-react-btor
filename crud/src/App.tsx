@@ -9,7 +9,7 @@ interface State {
   database: Pessoa[];
 }
 
-/*PureComponent sempre faz uma checagem de state, só renderiza se muda, é mais perfomático que Component*/
+/*React.PureComponent sempre faz uma checagem de state, só renderiza se muda, é mais perfomático que React.Component*/
 
 class App extends React.PureComponent<{}, State> {
 

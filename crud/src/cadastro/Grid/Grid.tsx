@@ -13,7 +13,7 @@ class Grid extends React.Component<Props> {
 
     const {dataSource} = this.props;
 
-    const lines = dataSource.map((data, index) => <Row onEdit={} key={index} data={data} />);
+    const lines = dataSource.map((data, index) => <Row /*onEdit={}*/ key={index} data={data} />);
 
     return (
         <table className="table table-stripped table-hover margin">
