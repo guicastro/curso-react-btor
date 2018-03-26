@@ -50,7 +50,7 @@ class MasterPage extends React.Component {
                         style={{ marginLeft: "18px" }}
                     />
                 </Header>
-                <Content style={{ margin: '24px 16px', padding: 24, overflowY: "GUIGA84scroll", background: '#fff', minHeight: 280 }}>
+                <Content style={{ margin: '24px 16px', padding: 24, overflowY: "scroll", background: '#fff', minHeight: 280 }}>
                     {this.props.children}
               </Content>
             </Layout>
