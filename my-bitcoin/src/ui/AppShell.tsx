@@ -16,24 +16,16 @@ class AppShell extends React.Component {
 
                 <Layout className="layout">
                     <Header>
-                    <div className="logo" />
-                    <Menu
-                        theme="dark"
-                        mode="horizontal"
-                        defaultSelectedKeys={['2']}
-                        style={{ lineHeight: '64px' }}
-                    >
-                        <Menu>
-                            <Menu.Item>
-                                <NavLink to='/pagina1'>pagina 1</NavLink>
-                            </Menu.Item>
-                            <Menu.Item>
-                                <NavLink to='/pagina2'>pagina 2</NavLink>
-                            </Menu.Item>
-                            <Menu.Item>
-                                <NavLink to='/pagina3'>pagina 3</NavLink>
-                            </Menu.Item> 
-                        </Menu>
+                    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} style={{ lineHeight: '64px' }}>
+                        <Menu.Item key="1">
+                            <NavLink to='/pagina1'>pagina 1</NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="2">
+                            <NavLink to='/pagina2'>pagina 2</NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="3">
+                            <NavLink to='/pagina3'>pagina 3</NavLink>
+                        </Menu.Item> 
                     </Menu>
                     </Header>
                     <Content style={{ padding: '0 50px' }}>
@@ -53,7 +45,7 @@ class AppShell extends React.Component {
                     </div>
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>
-                    Ant Design ©2016 Created by Ant UED
+                    ©2018 Created by Guilherme Castro
                     </Footer>
                 </Layout>
             </BrowserRouter>
