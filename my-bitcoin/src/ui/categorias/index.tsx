@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Switch, Route, NavLink} from 'react-router-dom';
 import NovaCategoria from './NovaCategoria';
 import VerCategoria from './VerCategoria';
+import ListarCategorias from './ListarCategorias';
 import {Button} from 'antd';
 
 
@@ -17,11 +18,7 @@ function Categorias() {
                 <Route exact path="/categorias/nova" component={NovaCategoria} />
                 <Route exact path="/categorias/:id" component={VerCategoria} />
             </Switch>
-            <div style={{marginTop: 10}}>
-                <strong>Lista de Categorias</strong>
-                <br />
-                <NavLink to='/categorias/12'>ID 12</NavLink>
-            </div>
+            <Route path="/categorias/" component={ListarCategorias} />
         </React.Fragment>
     );
 }

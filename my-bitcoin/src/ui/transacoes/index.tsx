@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Switch, Route, NavLink} from 'react-router-dom';
-import NovaTransacao from './NovaTransacao';
-import VerTransacao from './VerTransacao';
+import TransacaoPage from './TransacaoPage';
+import ListarTransacoes from './ListarTransacoes';
 import {Button} from 'antd';
 
 
@@ -15,16 +15,12 @@ function Transacoes() {
                 <Button type="primary" icon="plus-circle" size="large">Nova</Button>
             </NavLink>
             <Switch>
-                <Route exact path="/transacoes/nova" component={NovaTransacao} />
-                <Route exact path="/transacoes/:id" component={VerTransacao} />
+                <Route exact path="/transacoes/nova" component={TransacaoPage} />
+                <Route exact path="/transacoes/:id" component={TransacaoPage} />
             </Switch>
-            <div style={{marginTop: 10}}>
-                <strong>Lista de Transações</strong>
-                <br />
-                <NavLink to='/transacoes/55'>ID 55</NavLink>
-            </div>
+            <ListarTransacoes />
         </React.Fragment>
-);
+    );
 }
 
 export default Transacoes;

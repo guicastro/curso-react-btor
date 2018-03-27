@@ -7,18 +7,19 @@ interface RouteProps {
 interface Props extends RouteComponentProps<RouteProps> {
 }
 /*
-EXEMPLO PARA PEGAR DADOS DA ROTA QUANDO O COMPONENTE É CLASS EXTENDS REACT
+EXEMPLO QUANDO A PÁGINA DE NOVA TRANSAÇÃO E EDITAR TRANSAÇÃO SÃO OS MESMOS COMPONENTES
 */
-class VerConta extends React.Component<Props> {
-   
+
+class TransacaoPage extends React.Component<Props> {
+
     render() {
 
         const {match} = this.props;
 
         const id = match.params.id;
 
-        return(<h1>Ver Conta ({id ? `#${id}` : 'novo'})</h1>);
+        return(<h1>Página de Transações ({id ? `#${id}` : 'novo'})</h1>);
     }
 }
 
-export default VerConta;
+export default TransacaoPage;
